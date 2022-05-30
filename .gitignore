@@ -1,0 +1,7 @@
+
+*.plist
+*.xcuserstate
+*.xcworkspacedata
+Swift-IOS-Features.swiftpm/Package.swift
+*.json
+.DS_Store
