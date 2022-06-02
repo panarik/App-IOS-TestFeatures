@@ -6,5 +6,8 @@
         <page name='Part-2-IfStatements'/>
         <page name='Part-3-SwitchStatement'/>
         <page name='Part-4-Loops'/>
+        <page name='Part-5-Functions'/>
+        <page name='Part-6-Classes'/>
+        <page name='Part-7-Inheritance'/>
     </pages>
 </playground>

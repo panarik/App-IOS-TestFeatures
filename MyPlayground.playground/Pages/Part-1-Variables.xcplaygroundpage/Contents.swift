@@ -25,4 +25,7 @@ print(round(d))
 //Convert
 print(Int(c))
 
+//Concat
+print("some text with digit \(b)")
+
 
