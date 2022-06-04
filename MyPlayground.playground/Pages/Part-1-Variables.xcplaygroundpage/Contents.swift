@@ -26,6 +26,7 @@ print(round(d))
 print(Int(c))
 
 //Concat
-print("some text with digit \(b)")
+print("Hello " + "world!") // String with String
+print("some text with digit \(b)") // String with Int
 
 

@@ -1,6 +1,14 @@
 import Foundation
 
 class MyClass {
+    
+    //Computed property
+    var fullTitle:String {
+        // do some code as function with return.
+        return "New full Title with author"
+    }
+    
+    // Property
     var title = ""
     var body = ""
     var sign = ""
