@@ -9,5 +9,8 @@
         <page name='Part-5-Functions'/>
         <page name='Part-6-Classes'/>
         <page name='Part-7-Inheritance'/>
+        <page name='Part-8-Initializer'/>
+        <page name='Part-9-Arrays'/>
+        <page name='Part-10-Dictionary'/>
     </pages>
 </playground>

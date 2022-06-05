@@ -9,24 +9,31 @@ class Person {
 }
 
 class BlogPost {
-    var title:String? // may nil. Have to be checked.
+    var title:String? // Maybe nil. Have to be checked.
     var body = ""
-    var author:Person! // may nil. Ignore. Will use without checking.
+    var author:Person! // Maybe nil. Ignore. Will use without checking.
     var comments = 0
-    var views:Int // may nil. Have to be initialized.
+    var views:Int // Maybe nil. Have to be initialized.
     
+    // Default initializer.
     init () {
-        // Default initializer
         self.views = 0
     }
     
+    //Custom initializer.
     init(title:String, body:String, author:Person) {
-        //Custom initializer
         self.title = title
         self.body = body
         self.author = author
         self.views = 0
     }
+    
+    // Convenience initializer.
+    convenience init(title:String) {
+        self.init()
+        self.title = title
+    }
+    
 }
 
 let postNil = BlogPost()
