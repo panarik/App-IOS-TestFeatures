@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8174C50284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C4F284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift */; };
 		B8174C52284D4FE000DD9EF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C51284D4FE000DD9EF8 /* ContentView.swift */; };
 		B8174C54284D4FE300DD9EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8174C53284D4FE300DD9EF8 /* Assets.xcassets */; };
 		B8174C57284D4FE300DD9EF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8174C56284D4FE300DD9EF8 /* Preview Assets.xcassets */; };
 		B8174C61284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C60284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift */; };
 		B8174C6B284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C6A284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift */; };
 		B8174C6D284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C6C284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift */; };
+		B81AAE9A284D5669002A0B44 /* Swift_IOS_FeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C4F284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,8 +257,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B81AAE9A284D5669002A0B44 /* Swift_IOS_FeaturesApp.swift in Sources */,
 				B8174C52284D4FE000DD9EF8 /* ContentView.swift in Sources */,
-				B8174C50284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
