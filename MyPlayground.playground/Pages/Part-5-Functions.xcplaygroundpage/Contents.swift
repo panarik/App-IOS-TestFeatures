@@ -37,7 +37,16 @@ print(myFunctionParam(arg:"Hello from param with argument."))
 
 
 // Several params.
-func add(digit1:Int, digit2:Int) ->Int {
+func add(digit1:Int, digit2:Int) -> Int {
     return digit1 + digit2
 }
 print(add(digit1:1, digit2:2))
+
+
+// Optional params.
+func multiple(a:Int, b:Int = 10) -> Int {
+    return a*b
+}
+print(multiple(a:2, b:10)) // using both parameters
+print(multiple(a: 2)) // using one parameter
+

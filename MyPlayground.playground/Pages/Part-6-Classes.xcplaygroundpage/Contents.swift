@@ -1,5 +1,7 @@
 import Foundation
 
+
+// MARK: Classes
 class MyClass {
     
     //Computed property
@@ -32,6 +34,33 @@ myObject.upRating(add: 5)
 
 // Use fields
 print(myObject.rating)
+
+
+// MARK: Structions
+
+// Create a structure.
+struct MyStruct {
+    
+    // Have variables.
+    var message = "some message"
+    var myObject = MyClass()
+    
+    // Have functions.
+    func myFunc() {
+        print(message)
+    }
+    
+    // Have classes.
+    class MyClass {
+        var message = "Hello!"
+    }
+    
+}
+
+// Use structures.
+var a = MyStruct() // Create object of struction.
+a.message = "Hello from struction!" // Assign data to object.
+a.myFunc() // Use object.
 
 
 
