@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B8174C52284D4FE000DD9EF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C51284D4FE000DD9EF8 /* ContentView.swift */; };
+		B8174C52284D4FE000DD9EF8 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */; };
 		B8174C54284D4FE300DD9EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8174C53284D4FE300DD9EF8 /* Assets.xcassets */; };
 		B8174C57284D4FE300DD9EF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8174C56284D4FE300DD9EF8 /* Preview Assets.xcassets */; };
 		B8174C61284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C60284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift */; };
 		B8174C6B284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C6A284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift */; };
 		B8174C6D284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C6C284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift */; };
 		B81AAE9A284D5669002A0B44 /* Swift_IOS_FeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C4F284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift */; };
+		B8540F0028513311004B847C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540EFF28513311004B847C /* Landmark.swift */; };
+		B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0928513FB5004B847C /* LandmarkRow.swift */; };
+		B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0C285143F6004B847C /* LandmarkData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		B8174C4C284D4FE000DD9EF8 /* Swift-IOS-Features.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-IOS-Features.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8174C4F284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_FeaturesApp.swift; sourceTree = "<group>"; };
-		B8174C51284D4FE000DD9EF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
 		B8174C53284D4FE300DD9EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8174C56284D4FE300DD9EF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8174C5C284D4FE300DD9EF8 /* Swift-IOS-FeaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-IOS-FeaturesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +47,9 @@
 		B8174C66284D4FE300DD9EF8 /* Swift-IOS-FeaturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-IOS-FeaturesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8174C6A284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_FeaturesUITests.swift; sourceTree = "<group>"; };
 		B8174C6C284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_FeaturesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8540EFF28513311004B847C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		B8540F0928513FB5004B847C /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		B8540F0C285143F6004B847C /* LandmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				B8174C4F284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift */,
-				B8174C51284D4FE000DD9EF8 /* ContentView.swift */,
 				B8174C53284D4FE300DD9EF8 /* Assets.xcassets */,
+				B8540F032851358D004B847C /* Model */,
+				B8540F0428513670004B847C /* Views */,
 				B8174C55284D4FE300DD9EF8 /* Preview Content */,
 			);
 			path = "Swift-IOS-Features";
@@ -125,6 +132,48 @@
 				B8174C6C284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift */,
 			);
 			path = "Swift-IOS-FeaturesUITests";
+			sourceTree = "<group>";
+		};
+		B8540F032851358D004B847C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B8540F0B285143D6004B847C /* Data */,
+				B8540EFF28513311004B847C /* Landmark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8540F0428513670004B847C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B8540F0828513713004B847C /* Items */,
+				B8540F0728513707004B847C /* Screens */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B8540F0728513707004B847C /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		B8540F0828513713004B847C /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				B8540F0928513FB5004B847C /* LandmarkRow.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		B8540F0B285143D6004B847C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B8540F0C285143F6004B847C /* LandmarkData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +307,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81AAE9A284D5669002A0B44 /* Swift_IOS_FeaturesApp.swift in Sources */,
-				B8174C52284D4FE000DD9EF8 /* ContentView.swift in Sources */,
+				B8174C52284D4FE000DD9EF8 /* AuthScreen.swift in Sources */,
+				B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */,
+				B8540F0028513311004B847C /* Landmark.swift in Sources */,
+				B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +469,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Swift-IOS-Features/Preview Content\"";
+				DEVELOPMENT_TEAM = 25SRH6JAW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +498,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Swift-IOS-Features/Preview Content\"";
+				DEVELOPMENT_TEAM = 25SRH6JAW3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

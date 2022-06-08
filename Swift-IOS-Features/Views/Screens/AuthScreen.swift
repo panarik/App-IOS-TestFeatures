@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var score = 5
+    
+    private let continueButton = "Continue"
+    
     var body: some View {
-        
         
         VStack {
             
@@ -33,27 +37,35 @@ struct ContentView: View {
                 // User actions buttons
                 VStack(spacing: 2.0) {
                     Button("SIGN UP") {
+                        print("SIGN UP")
                     }
                     .padding(8)
                     
                     Button("Log In") {
+                        print("Log In")
                     }
                     .padding(8)
                     
                 }
-            
                 .padding(.trailing, 40.0)
+                
             }
             .padding(.bottom, 40)
             
             Spacer()
             
             // General buttons
-            Button("CONTINUE WITHOUT REGISTRATION") {
-                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-            }
-            .padding()
-            
+
+                Button(action: {
+                    print("CONTINUE")
+                }, label: {
+                    HStack {
+                        Image(systemName: "figure.walk.diamond.fill")
+                        Text(continueButton).bold().dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
+                    }
+                })
+                .padding()
+
             
 //            Text("Placeholder")
 //                .bold()
@@ -64,9 +76,8 @@ struct ContentView: View {
         }
         .padding(.vertical, 30)
         
-        
-
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

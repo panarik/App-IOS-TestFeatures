@@ -29,7 +29,9 @@ print(computedPr)
 print(round(d))
 
 //Convert
-print(Int(c))
+print(Int(c)) // Float to Int
+let line:String = String(a) // Int to String
+
 
 //Concat
 print("Hello " + "world!") // String with String
