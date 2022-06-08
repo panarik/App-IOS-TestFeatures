@@ -1,10 +1,3 @@
-//
-//  LandmarkRow.swift
-//  Swift-IOS-Features
-//
-//  Created by panarik on 6/8/22.
-//
-
 import SwiftUI
 
 struct LandmarkRow: View {
@@ -14,10 +7,10 @@ struct LandmarkRow: View {
         HStack {
             landmark.image
                 .resizable()
-                .frame(width: 100, height: 100.0)
+                .frame(width: 80, height: 80.0)
+                
             Text(landmark.name)
                 .dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
-
             Spacer()
         }
     }

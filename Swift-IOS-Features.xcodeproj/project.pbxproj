@@ -17,6 +17,7 @@
 		B8540F0028513311004B847C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540EFF28513311004B847C /* Landmark.swift */; };
 		B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0928513FB5004B847C /* LandmarkRow.swift */; };
 		B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0C285143F6004B847C /* LandmarkData.swift */; };
+		B8540F0F28514EE0004B847C /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0E28514EE0004B847C /* LandmarkListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		B8540EFF28513311004B847C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		B8540F0928513FB5004B847C /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		B8540F0C285143F6004B847C /* LandmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkData.swift; sourceTree = "<group>"; };
+		B8540F0E28514EE0004B847C /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		B8540F0828513713004B847C /* Items */ = {
 			isa = PBXGroup;
 			children = (
+				B8540F0E28514EE0004B847C /* LandmarkListView.swift */,
 				B8540F0928513FB5004B847C /* LandmarkRow.swift */,
 			);
 			path = Items;
@@ -310,6 +313,7 @@
 				B8174C52284D4FE000DD9EF8 /* AuthScreen.swift in Sources */,
 				B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */,
 				B8540F0028513311004B847C /* Landmark.swift in Sources */,
+				B8540F0F28514EE0004B847C /* LandmarkListView.swift in Sources */,
 				B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
