@@ -157,6 +157,7 @@
 		B8540F0728513707004B847C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B8540F0E28514EE0004B847C /* LandmarkListView.swift */,
 				B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */,
 			);
 			path = Screens;
@@ -165,7 +166,6 @@
 		B8540F0828513713004B847C /* Items */ = {
 			isa = PBXGroup;
 			children = (
-				B8540F0E28514EE0004B847C /* LandmarkListView.swift */,
 				B8540F0928513FB5004B847C /* LandmarkRow.swift */,
 			);
 			path = Items;

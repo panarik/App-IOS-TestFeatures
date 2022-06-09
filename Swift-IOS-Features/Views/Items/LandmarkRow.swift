@@ -8,7 +8,7 @@ struct LandmarkRow: View {
             landmark.image
                 .resizable()
                 .frame(width: 80, height: 80.0)
-                
+            
             Text(landmark.name)
                 .dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
             Spacer()

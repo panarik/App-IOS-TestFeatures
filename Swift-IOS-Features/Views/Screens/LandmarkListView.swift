@@ -5,24 +5,31 @@ struct LandmarkListView: View {
     @State var isLinkActive = false
     
     var body: some View {
+        
         //List with items
         NavigationView {
-            List(landmarks) { Landmark in
+            List(landmarks) { landmark in
                 NavigationLink {
-                    Text("Test")
+                    Text(String(landmark.name))
+                        .dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
                 }
             label: {
-                    LandmarkRow(landmark: Landmark)
-                }
+                LandmarkRow(landmark: landmark)
+            }
             }
             .navigationTitle("Main menu")
         }
-    }
-}
-            
-    
         
-        // Navigation Button
+    }
+    
+    //    func getView(item: Landmark) -> Text {
+    //
+    //    }
+}
+
+
+
+// Navigation Button
 //        NavigationView {
 //                    VStack(alignment: .leading) {
 //
@@ -36,8 +43,8 @@ struct LandmarkListView: View {
 //                    }
 //                    .navigationBarTitle(Text("Login"))
 //                }
-        
-        //Navigation List
+
+//Navigation List
 //        NavigationView {
 //            List(landmarks) { landmark in
 //                NavigationLink {
@@ -48,7 +55,7 @@ struct LandmarkListView: View {
 //            }
 //            .navigationTitle("Landmarks")
 //        }
-        
+
 
 struct LandmarkListView_Previews: PreviewProvider {
     static var previews: some View {
