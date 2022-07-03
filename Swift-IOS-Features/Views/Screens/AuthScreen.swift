@@ -21,11 +21,11 @@ struct ContentView: View {
                     // User credentials
                     VStack(alignment: .leading, spacing: 0.0) {
                         
-                        TextField("Your Name", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Your Name", text: .constant(""))
                             .padding([.top, .bottom], 10)
-                        TextField("Your Email", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Your Email", text: .constant(""))
                             .padding([.top, .bottom], 10)
-                        TextField("Your Password", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        TextField("Your Password", text: .constant(""))
                             .padding([.top, .bottom], 10)
                     }
                     .padding(.leading, 40.0)
@@ -58,7 +58,7 @@ struct ContentView: View {
                     }, label: {
                         HStack {
                             Image(systemName: "figure.walk.diamond.fill")
-                            Text(continueButton).bold().dynamicTypeSize(/*@START_MENU_TOKEN@*/.xxxLarge/*@END_MENU_TOKEN@*/)
+                            Text(continueButton).bold().dynamicTypeSize(.xxxLarge)
                         }
                     })
                     .padding()
@@ -76,7 +76,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.light)
-            .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-        
+            .opacity(1.0)
     }
 }
