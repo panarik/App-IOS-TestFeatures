@@ -63,10 +63,8 @@ struct ContentView: View {
                     })
                     .padding()
                 }
-                
             }
             .padding(.vertical, 30)
-            
         }
     }
     
@@ -76,6 +74,5 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .preferredColorScheme(.light)
-            .opacity(1.0)
     }
 }

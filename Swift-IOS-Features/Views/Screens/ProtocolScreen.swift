@@ -40,7 +40,7 @@ protocol BottonCurrentProtocol: BottonTextProtocol, BottonPressedProtocol {
 }
 
 
-struct ProtocolsExample: View {
+struct ProtocolScreen: View {
     
     @State var colorTheme: ColorThemeProtocol = SecondaryColorTheme()
     @State var bottonText: BottonCurrentProtocol = DefaultBottonText()
@@ -78,12 +78,12 @@ struct ProtocolsExample: View {
                     label: {Text(toggleIsOn ? "Secondary style" : "Default style")
                             .font(Font.title3)
                             .foregroundColor(colorTheme.secondary)
-                            .padding()
                     })
+                .padding(.horizontal, 60)
                 .toggleStyle(SwitchToggleStyle(tint: colorTheme.primary))
                 
             }
-            .padding(.horizontal, 80)
+            .padding(.horizontal, 20)
             .padding(.bottom, 40)
         }
         
@@ -93,6 +93,6 @@ struct ProtocolsExample: View {
 
 struct Protocol_Previews: PreviewProvider {
     static var previews: some View {
-        ProtocolsExample()
+        ProtocolScreen()
     }
 }

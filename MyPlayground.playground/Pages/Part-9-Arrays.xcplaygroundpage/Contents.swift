@@ -49,5 +49,3 @@ func printArray(_ array:[[Int]]) {
         }
     }
 }
-
-
