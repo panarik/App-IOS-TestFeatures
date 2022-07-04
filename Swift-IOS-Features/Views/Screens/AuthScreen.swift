@@ -51,7 +51,7 @@ struct ContentView: View {
                 Spacer()
                 
                 // General buttons
-                NavigationLink(destination: LandmarkListView(), isActive: $continueActive) {
+                NavigationLink(destination: MainScreen(), isActive: $continueActive) {
                     Button(action: {
                         continueActive = true
                         print("CONTINUE")

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LandmarkListView: View {
+struct MainScreen: View {
     
     @State var isLinkActive = false
     
@@ -10,8 +10,12 @@ struct LandmarkListView: View {
         NavigationView {
             List(landmarks) { landmark in
                 NavigationLink {
-                    Text(String(landmark.name))
-                        .font(.title)
+                    switch landmark.name {
+                    case "List Example" : ListScreen()
+                    case "Themes" : ProtocolScreen()
+                    default : Text(landmark.name + " screen does not exist")
+                            .font(.title)
+                    }
                 }
             label: {
                 LandmarkRow(landmark: landmark)
@@ -24,6 +28,6 @@ struct LandmarkListView: View {
 
 struct LandmarkListView_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkListView()
+        MainScreen()
     }
 }

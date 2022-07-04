@@ -18,7 +18,7 @@
 		B8540F0028513311004B847C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540EFF28513311004B847C /* Landmark.swift */; };
 		B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0928513FB5004B847C /* LandmarkRow.swift */; };
 		B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0C285143F6004B847C /* LandmarkData.swift */; };
-		B8540F0F28514EE0004B847C /* LandmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0E28514EE0004B847C /* LandmarkListView.swift */; };
+		B8540F0F28514EE0004B847C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0E28514EE0004B847C /* MainScreen.swift */; };
 		B8A90AED28733FCF005C7547 /* DependencyInjectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A90AEC28733FCF005C7547 /* DependencyInjectionScreen.swift */; };
 		B8A90AEF28738047005C7547 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A90AEE28738047005C7547 /* ListScreen.swift */; };
 /* End PBXBuildFile section */
@@ -55,7 +55,7 @@
 		B8540EFF28513311004B847C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		B8540F0928513FB5004B847C /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		B8540F0C285143F6004B847C /* LandmarkData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkData.swift; sourceTree = "<group>"; };
-		B8540F0E28514EE0004B847C /* LandmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkListView.swift; sourceTree = "<group>"; };
+		B8540F0E28514EE0004B847C /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		B8A90AEC28733FCF005C7547 /* DependencyInjectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionScreen.swift; sourceTree = "<group>"; };
 		B8A90AEE28738047005C7547 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -163,7 +163,7 @@
 		B8540F0728513707004B847C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				B8540F0E28514EE0004B847C /* LandmarkListView.swift */,
+				B8540F0E28514EE0004B847C /* MainScreen.swift */,
 				B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */,
 				B8530D1928721BD7003BCB35 /* ProtocolScreen.swift */,
 				B8A90AEC28733FCF005C7547 /* DependencyInjectionScreen.swift */,
@@ -323,7 +323,7 @@
 				B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */,
 				B8530D1A28721BD7003BCB35 /* ProtocolScreen.swift in Sources */,
 				B8540F0028513311004B847C /* Landmark.swift in Sources */,
-				B8540F0F28514EE0004B847C /* LandmarkListView.swift in Sources */,
+				B8540F0F28514EE0004B847C /* MainScreen.swift in Sources */,
 				B8A90AED28733FCF005C7547 /* DependencyInjectionScreen.swift in Sources */,
 				B8A90AEF28738047005C7547 /* ListScreen.swift in Sources */,
 				B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */,
