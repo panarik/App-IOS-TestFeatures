@@ -9,7 +9,7 @@ struct FruitModel: Identifiable {
 class FruitViewModel: ObservableObject {
     
     @Published var fruiteArray: [FruitModel] = []
-    @Published var isLoading:Bool = false // loading screen
+    @Published var isLoading: Bool = false // loading screen
     
     init() {
         getFruits() // fill list

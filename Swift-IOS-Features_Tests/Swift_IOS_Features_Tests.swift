@@ -8,7 +8,7 @@
 import XCTest
 @testable import Swift_IOS_Features
 
-class Swift_IOS_FeaturesTests: XCTestCase {
+class Swift_IOS_Features_Tests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

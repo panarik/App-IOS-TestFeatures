@@ -15,6 +15,11 @@ for _ in 0...10 {
     print("Hello!")
 }
 
+// Loop one less than
+for i in 0..<10 {
+    print(i)
+}
+
 // Loop "While"
 while counter > 0 {
     print(counter)

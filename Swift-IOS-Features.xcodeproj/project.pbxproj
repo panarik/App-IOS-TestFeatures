@@ -10,10 +10,11 @@
 		B8174C52284D4FE000DD9EF8 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */; };
 		B8174C54284D4FE300DD9EF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8174C53284D4FE300DD9EF8 /* Assets.xcassets */; };
 		B8174C57284D4FE300DD9EF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8174C56284D4FE300DD9EF8 /* Preview Assets.xcassets */; };
-		B8174C61284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C60284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift */; };
+		B8174C61284D4FE300DD9EF8 /* Swift_IOS_Features_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C60284D4FE300DD9EF8 /* Swift_IOS_Features_Tests.swift */; };
 		B8174C6B284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C6A284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift */; };
 		B8174C6D284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C6C284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift */; };
 		B81AAE9A284D5669002A0B44 /* Swift_IOS_FeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8174C4F284D4FE000DD9EF8 /* Swift_IOS_FeaturesApp.swift */; };
+		B83B3C2C2874E55C00D782EF /* UnitTestingViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83B3C2B2874E55C00D782EF /* UnitTestingViewModel_Test.swift */; };
 		B8530D1A28721BD7003BCB35 /* ProtocolScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8530D1928721BD7003BCB35 /* ProtocolScreen.swift */; };
 		B8540F0028513311004B847C /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540EFF28513311004B847C /* Landmark.swift */; };
 		B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0928513FB5004B847C /* LandmarkRow.swift */; };
@@ -21,6 +22,8 @@
 		B8540F0F28514EE0004B847C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8540F0E28514EE0004B847C /* MainScreen.swift */; };
 		B8A90AED28733FCF005C7547 /* DependencyInjectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A90AEC28733FCF005C7547 /* DependencyInjectionScreen.swift */; };
 		B8A90AEF28738047005C7547 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A90AEE28738047005C7547 /* ListScreen.swift */; };
+		B8A90AF82874DBC8005C7547 /* UnitTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A90AF72874DBC8005C7547 /* UnitTestingView.swift */; };
+		B8A90AFA2874DF4B005C7547 /* UnitTestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A90AF92874DF4B005C7547 /* UnitTestingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +50,11 @@
 		B8174C53284D4FE300DD9EF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8174C56284D4FE300DD9EF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B8174C5C284D4FE300DD9EF8 /* Swift-IOS-FeaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-IOS-FeaturesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8174C60284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_FeaturesTests.swift; sourceTree = "<group>"; };
+		B8174C60284D4FE300DD9EF8 /* Swift_IOS_Features_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_Features_Tests.swift; sourceTree = "<group>"; };
 		B8174C66284D4FE300DD9EF8 /* Swift-IOS-FeaturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift-IOS-FeaturesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8174C6A284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_FeaturesUITests.swift; sourceTree = "<group>"; };
 		B8174C6C284D4FE300DD9EF8 /* Swift_IOS_FeaturesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_IOS_FeaturesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B83B3C2B2874E55C00D782EF /* UnitTestingViewModel_Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel_Test.swift; sourceTree = "<group>"; };
 		B8530D1928721BD7003BCB35 /* ProtocolScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolScreen.swift; sourceTree = "<group>"; };
 		B8540EFF28513311004B847C /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		B8540F0928513FB5004B847C /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		B8540F0E28514EE0004B847C /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		B8A90AEC28733FCF005C7547 /* DependencyInjectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionScreen.swift; sourceTree = "<group>"; };
 		B8A90AEE28738047005C7547 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		B8A90AF72874DBC8005C7547 /* UnitTestingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingView.swift; sourceTree = "<group>"; };
+		B8A90AF92874DF4B005C7547 /* UnitTestingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				B8174C4E284D4FE000DD9EF8 /* Swift-IOS-Features */,
-				B8174C5F284D4FE300DD9EF8 /* Swift-IOS-FeaturesTests */,
+				B8174C5F284D4FE300DD9EF8 /* Swift-IOS-Features_Tests */,
 				B8174C69284D4FE300DD9EF8 /* Swift-IOS-FeaturesUITests */,
 				B8174C4D284D4FE000DD9EF8 /* Products */,
 			);
@@ -125,12 +131,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		B8174C5F284D4FE300DD9EF8 /* Swift-IOS-FeaturesTests */ = {
+		B8174C5F284D4FE300DD9EF8 /* Swift-IOS-Features_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				B8174C60284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift */,
+				B8174C60284D4FE300DD9EF8 /* Swift_IOS_Features_Tests.swift */,
+				B83B3C2B2874E55C00D782EF /* UnitTestingViewModel_Test.swift */,
 			);
-			path = "Swift-IOS-FeaturesTests";
+			path = "Swift-IOS-Features_Tests";
 			sourceTree = "<group>";
 		};
 		B8174C69284D4FE300DD9EF8 /* Swift-IOS-FeaturesUITests */ = {
@@ -163,6 +170,7 @@
 		B8540F0728513707004B847C /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				B8A90AF62874DB94005C7547 /* UnitTesting */,
 				B8540F0E28514EE0004B847C /* MainScreen.swift */,
 				B8174C51284D4FE000DD9EF8 /* AuthScreen.swift */,
 				B8530D1928721BD7003BCB35 /* ProtocolScreen.swift */,
@@ -186,6 +194,15 @@
 				B8540F0C285143F6004B847C /* LandmarkData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		B8A90AF62874DB94005C7547 /* UnitTesting */ = {
+			isa = PBXGroup;
+			children = (
+				B8A90AF72874DBC8005C7547 /* UnitTestingView.swift */,
+				B8A90AF92874DF4B005C7547 /* UnitTestingViewModel.swift */,
+			);
+			path = UnitTesting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B81AAE9A284D5669002A0B44 /* Swift_IOS_FeaturesApp.swift in Sources */,
+				B8A90AF82874DBC8005C7547 /* UnitTestingView.swift in Sources */,
 				B8174C52284D4FE000DD9EF8 /* AuthScreen.swift in Sources */,
 				B8540F0A28513FB5004B847C /* LandmarkRow.swift in Sources */,
 				B8530D1A28721BD7003BCB35 /* ProtocolScreen.swift in Sources */,
@@ -326,6 +344,7 @@
 				B8540F0F28514EE0004B847C /* MainScreen.swift in Sources */,
 				B8A90AED28733FCF005C7547 /* DependencyInjectionScreen.swift in Sources */,
 				B8A90AEF28738047005C7547 /* ListScreen.swift in Sources */,
+				B8A90AFA2874DF4B005C7547 /* UnitTestingViewModel.swift in Sources */,
 				B8540F0D285143F6004B847C /* LandmarkData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +353,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8174C61284D4FE300DD9EF8 /* Swift_IOS_FeaturesTests.swift in Sources */,
+				B8174C61284D4FE300DD9EF8 /* Swift_IOS_Features_Tests.swift in Sources */,
+				B83B3C2C2874E55C00D782EF /* UnitTestingViewModel_Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +513,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -522,6 +543,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -540,8 +562,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SRH6JAW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -559,8 +583,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SRH6JAW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -579,6 +605,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SRH6JAW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.panarik.Swift-IOS-FeaturesUITests";
@@ -596,6 +623,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25SRH6JAW3;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.github.panarik.Swift-IOS-FeaturesUITests";
