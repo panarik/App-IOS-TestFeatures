@@ -12,7 +12,7 @@ struct UnitTestingView: View {
     @StateObject var vm: UnitTestingViewModel
     
     init(isPremium: Bool) {
-        _vm = StateObject(wrappedValue: UnitTestingViewModel(isPremium: isPremium))
+        _vm = StateObject(wrappedValue: UnitTestingViewModel(isPremium: isPremium, dataService: NewMockDataService(items: nil)))
     }
     
     var body: some View {

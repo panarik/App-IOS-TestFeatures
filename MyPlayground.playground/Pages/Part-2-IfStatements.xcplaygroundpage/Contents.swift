@@ -33,3 +33,16 @@ func isTrue() -> Bool {
     return true
 }
 
+
+// MARK: GUARD.
+
+var x = 0
+
+func guardEx() {
+    guard x == 0 else {
+        print("must be not zero") // only when false statement
+        return
+    }
+
+}
+
