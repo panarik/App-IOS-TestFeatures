@@ -3,6 +3,7 @@ import Foundation
 // Create
 var myDB1 = Dictionary<String, String>()
 var myDB2 = [String:String]()
+var myDB3:[String:String] = [:]
 
 // Add
 myDB1["key1"] = "Value_1"
