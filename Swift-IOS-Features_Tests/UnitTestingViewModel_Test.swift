@@ -174,6 +174,24 @@ class UnitTestingViewModel_Test: XCTestCase {
         XCTAssertGreaterThan(vm.dataArray.count, 0)
     }
     
+    func test_UnitTestingViewModel_downloadWithCombine_shouldReturnItems() throws {
+        // When
+        vm.downloadWithCombine()
+        let exp = XCTestExpectation(description: "Should return items after a second.")
+        
+        //Subscire to publisher and looking for change.
+        vm.$dataArray
+            .dropFirst() // catch first publish 'dataArray'
+            .sink { _ in
+                exp.fulfill() // fill expectations when 'vm.dataArray' has changed.
+        }
+        .store(in: &cancellables)
+        
+        // Then
+        wait(for: [exp], timeout: 5)
+        XCTAssertGreaterThan(vm.dataArray.count, 0)
+    }
+    
     /**
      Generates random `String` with random length from 1 to 32 cymbols.
      */
