@@ -1,9 +1,6 @@
 import XCTest
 
-/*
- Naming structure: test_[struct]_[ui component]_[expected result]
- Testing structure: Given, When, Then
- */
+
 
 class App_IOS_TestFeaturesUITests: XCTestCase {
 
