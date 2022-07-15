@@ -1,10 +1,3 @@
-//
-//  App_IOS_TestFeaturesUITestsLaunchTests.swift
-//  App-IOS-TestFeaturesUITests
-//
-//  Created by panarik on 7/14/22.
-//
-
 import XCTest
 
 class App_IOS_TestFeaturesUITestsLaunchTests: XCTestCase {
@@ -29,4 +22,5 @@ class App_IOS_TestFeaturesUITestsLaunchTests: XCTestCase {
         attachment.lifetime = .keepAlways
         add(attachment)
     }
+    
 }

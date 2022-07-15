@@ -11,12 +11,12 @@
 		B8C4CFED2880AB3C003147C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C4CFEC2880AB3C003147C6 /* Assets.xcassets */; };
 		B8C4CFF02880AB3C003147C6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8C4CFEF2880AB3C003147C6 /* Preview Assets.xcassets */; };
 		B8C4CFFA2880AB3C003147C6 /* App_IOS_TestFeaturesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4CFF92880AB3C003147C6 /* App_IOS_TestFeaturesTests.swift */; };
-		B8C4D0042880AB3C003147C6 /* App_IOS_TestFeaturesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4D0032880AB3C003147C6 /* App_IOS_TestFeaturesUITests.swift */; };
-		B8C4D0062880AB3C003147C6 /* App_IOS_TestFeaturesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4D0052880AB3C003147C6 /* App_IOS_TestFeaturesUITestsLaunchTests.swift */; };
+		B8C4D0042880AB3C003147C6 /* AuthScreen2_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4D0032880AB3C003147C6 /* AuthScreen2_UITests.swift */; };
+		B8C4D0062880AB3C003147C6 /* App_IOS_TestFeatures_UITests_LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4D0052880AB3C003147C6 /* App_IOS_TestFeatures_UITests_LaunchTests.swift */; };
 		B8E490912880AE5E000849F6 /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490822880AE5E000849F6 /* ProtocolView.swift */; };
 		B8E490922880AE5E000849F6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490832880AE5E000849F6 /* MainView.swift */; };
 		B8E490932880AE5E000849F6 /* DependencyInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490842880AE5E000849F6 /* DependencyInjectionView.swift */; };
-		B8E490942880AE5E000849F6 /* AuthScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490852880AE5E000849F6 /* AuthScreen.swift */; };
+		B8E490942880AE5E000849F6 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490852880AE5E000849F6 /* AuthView.swift */; };
 		B8E490952880AE5E000849F6 /* UnitTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490872880AE5E000849F6 /* UnitTestingView.swift */; };
 		B8E490962880AE5E000849F6 /* UnitTestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490882880AE5E000849F6 /* UnitTestingViewModel.swift */; };
 		B8E490972880AE5E000849F6 /* NewMockDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E4908A2880AE5E000849F6 /* NewMockDataService.swift */; };
@@ -25,6 +25,7 @@
 		B8E4909B2880AE5E000849F6 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490902880AE5E000849F6 /* LandmarkRow.swift */; };
 		B8E490A02880AEB2000849F6 /* LandmarkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E4909E2880AEB2000849F6 /* LandmarkData.swift */; };
 		B8E490A12880AEB2000849F6 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E4909F2880AEB2000849F6 /* Landmark.swift */; };
+		B8E490A52880B4FE000849F6 /* AuthScreen_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E490A32880B4FE000849F6 /* AuthScreen_UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,12 +53,12 @@
 		B8C4CFF52880AB3C003147C6 /* App-IOS-TestFeaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeaturesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8C4CFF92880AB3C003147C6 /* App_IOS_TestFeaturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeaturesTests.swift; sourceTree = "<group>"; };
 		B8C4CFFF2880AB3C003147C6 /* App-IOS-TestFeaturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeaturesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8C4D0032880AB3C003147C6 /* App_IOS_TestFeaturesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeaturesUITests.swift; sourceTree = "<group>"; };
-		B8C4D0052880AB3C003147C6 /* App_IOS_TestFeaturesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeaturesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B8C4D0032880AB3C003147C6 /* AuthScreen2_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthScreen2_UITests.swift; sourceTree = "<group>"; };
+		B8C4D0052880AB3C003147C6 /* App_IOS_TestFeatures_UITests_LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeatures_UITests_LaunchTests.swift; sourceTree = "<group>"; };
 		B8E490822880AE5E000849F6 /* ProtocolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
 		B8E490832880AE5E000849F6 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B8E490842880AE5E000849F6 /* DependencyInjectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swift; sourceTree = "<group>"; };
-		B8E490852880AE5E000849F6 /* AuthScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreen.swift; sourceTree = "<group>"; };
+		B8E490852880AE5E000849F6 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		B8E490872880AE5E000849F6 /* UnitTestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingView.swift; sourceTree = "<group>"; };
 		B8E490882880AE5E000849F6 /* UnitTestingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel.swift; sourceTree = "<group>"; };
 		B8E4908A2880AE5E000849F6 /* NewMockDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		B8E490902880AE5E000849F6 /* LandmarkRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		B8E4909E2880AEB2000849F6 /* LandmarkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandmarkData.swift; sourceTree = "<group>"; };
 		B8E4909F2880AEB2000849F6 /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		B8E490A32880B4FE000849F6 /* AuthScreen_UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthScreen_UITests.swift; path = "../../Swift-IOS-Features/Swift-IOS-FeaturesUITests/AuthScreen_UITests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,7 @@
 			children = (
 				B8C4CFE72880AB3B003147C6 /* App-IOS-TestFeatures */,
 				B8C4CFF82880AB3C003147C6 /* App-IOS-TestFeaturesTests */,
-				B8C4D0022880AB3C003147C6 /* App-IOS-TestFeaturesUITests */,
+				B8C4D0022880AB3C003147C6 /* App-IOS-TestFeatures_UITests */,
 				B8C4CFE62880AB3B003147C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -141,20 +143,21 @@
 			path = "App-IOS-TestFeaturesTests";
 			sourceTree = "<group>";
 		};
-		B8C4D0022880AB3C003147C6 /* App-IOS-TestFeaturesUITests */ = {
+		B8C4D0022880AB3C003147C6 /* App-IOS-TestFeatures_UITests */ = {
 			isa = PBXGroup;
 			children = (
-				B8C4D0032880AB3C003147C6 /* App_IOS_TestFeaturesUITests.swift */,
-				B8C4D0052880AB3C003147C6 /* App_IOS_TestFeaturesUITestsLaunchTests.swift */,
+				B8E490A32880B4FE000849F6 /* AuthScreen_UITests.swift */,
+				B8C4D0032880AB3C003147C6 /* AuthScreen2_UITests.swift */,
+				B8C4D0052880AB3C003147C6 /* App_IOS_TestFeatures_UITests_LaunchTests.swift */,
 			);
-			path = "App-IOS-TestFeaturesUITests";
+			path = "App-IOS-TestFeatures_UITests";
 			sourceTree = "<group>";
 		};
 		B8E490802880AE5E000849F6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B8E490A22880B0E1000849F6 /* Main */,
-				B8E490852880AE5E000849F6 /* AuthScreen.swift */,
+				B8E490852880AE5E000849F6 /* AuthView.swift */,
 				B8E490822880AE5E000849F6 /* ProtocolView.swift */,
 				B8E490842880AE5E000849F6 /* DependencyInjectionView.swift */,
 				B8E4908B2880AE5E000849F6 /* ListView.swift */,
@@ -350,7 +353,7 @@
 				B8E490982880AE5E000849F6 /* ListView.swift in Sources */,
 				B8E490952880AE5E000849F6 /* UnitTestingView.swift in Sources */,
 				B8C4CFE92880AB3B003147C6 /* App_IOS_TestFeaturesApp.swift in Sources */,
-				B8E490942880AE5E000849F6 /* AuthScreen.swift in Sources */,
+				B8E490942880AE5E000849F6 /* AuthView.swift in Sources */,
 				B8E490962880AE5E000849F6 /* UnitTestingViewModel.swift in Sources */,
 				B8E490A02880AEB2000849F6 /* LandmarkData.swift in Sources */,
 			);
@@ -368,8 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C4D0042880AB3C003147C6 /* App_IOS_TestFeaturesUITests.swift in Sources */,
-				B8C4D0062880AB3C003147C6 /* App_IOS_TestFeaturesUITestsLaunchTests.swift in Sources */,
+				B8E490A52880B4FE000849F6 /* AuthScreen_UITests.swift in Sources */,
+				B8C4D0042880AB3C003147C6 /* AuthScreen2_UITests.swift in Sources */,
+				B8C4D0062880AB3C003147C6 /* App_IOS_TestFeatures_UITests_LaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
