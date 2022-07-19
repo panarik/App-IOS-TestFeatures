@@ -89,7 +89,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D07BE6AB7C2EC9DAF3819A4D /* Shared */ = {
+		D07BE6AB7C2EC9DAF3819A4D /* App-IOS-TestFeatures */ = {
 			isa = PBXGroup;
 			children = (
 				D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */,
@@ -103,14 +103,14 @@
 				D07BEDFAB95D437524A81BB8 /* UnitTesting */,
 				D07BEE1CC0118D8366B06B04 /* UITesting */,
 			);
-			path = Shared;
+			path = "App-IOS-TestFeatures";
 			sourceTree = "<group>";
 		};
 		D07BE82826624244481225A7 = {
 			isa = PBXGroup;
 			children = (
 				D07BED2B9D2138A14162076C /* Products */,
-				D07BE6AB7C2EC9DAF3819A4D /* Shared */,
+				D07BE6AB7C2EC9DAF3819A4D /* App-IOS-TestFeatures */,
 				D07BE8648FD1BCCEC09F9ED4 /* App-IOS-TestFeatures_Tests */,
 				D07BEBCE6B374EF5797AC7BC /* App-IOS-TestFeatures_UITests */,
 			);
