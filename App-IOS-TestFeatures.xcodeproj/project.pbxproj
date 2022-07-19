@@ -46,7 +46,6 @@
 		D07BE13F25C8FC8AA7A78AA4 /* UnitTestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingView.swift; sourceTree = "<group>"; };
 		D07BE1D38D3EED7AFABFB80B /* UnitTestingViewModel_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel_Test.swift; sourceTree = "<group>"; };
 		D07BE31C95ED5C6FD7D9F482 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		D07BE5E82C1045B5BD5DE3E3 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		D07BE659F95BF0C0959CC90C /* App-IOS-TestFeatures_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeatures_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07BE66B9DE98030AFF1E5B3 /* App-IOS-TestFeatures_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeatures_UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,7 +111,6 @@
 			children = (
 				D07BED2B9D2138A14162076C /* Products */,
 				D07BE6AB7C2EC9DAF3819A4D /* Shared */,
-				D07BEC6781BF071E324427D6 /* macOS */,
 				D07BE8648FD1BCCEC09F9ED4 /* App-IOS-TestFeatures_Tests */,
 				D07BEBCE6B374EF5797AC7BC /* App-IOS-TestFeatures_UITests */,
 			);
@@ -134,14 +132,6 @@
 				D07BE8251C611D4B5D378D69 /* AuthScreen_UITests.swift */,
 			);
 			path = "App-IOS-TestFeatures_UITests";
-			sourceTree = "<group>";
-		};
-		D07BEC6781BF071E324427D6 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				D07BE5E82C1045B5BD5DE3E3 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 		D07BED0B2CE70A7C0138F48A /* newMockDataService */ = {
