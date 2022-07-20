@@ -8,8 +8,8 @@ private class AuthViewModel: ObservableObject {
     @Published var passText: String = ""
     @Published var passPlaceholderText: String = "Your password"
     @Published var signedIn: Bool = false
-    
-    func signUpBottonPressed() {
+
+    func signUpButtonPressed() {
         if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
             signedIn = true
         }
@@ -17,15 +17,14 @@ private class AuthViewModel: ObservableObject {
 }
 
 struct AuthView: View {
-    
-    @StateObject private var vm:AuthViewModel = AuthViewModel()
-    
+
+    @StateObject private var vm: AuthViewModel = AuthViewModel()
+
     var body: some View {
         VStack {
             if vm.signedIn {
                 MainView()
-            }
-            else {
+            } else {
                 signUpLayer
             }
         }
@@ -33,46 +32,50 @@ struct AuthView: View {
 }
 
 extension AuthView {
-    
+
     private var signUpLayer: some View {
-        
+
         VStack {
             Image("login-secure")
-                .padding(.bottom)
-            
+                    .padding(.bottom)
+
             TextField(vm.namePlaceHolderText, text: $vm.nameText)
-                .font(Font.title3)
-                .padding()
-                .background(Color.init(red: 0.9, green: 0.9, blue: 0.9))
-                .cornerRadius(20)
-            
+                    .font(Font.title3)
+                    .padding()
+                    .background(Color.init(red: 0.9, green: 0.9, blue: 0.9))
+                    .cornerRadius(20)
+                    .accessibilityIdentifier("NameTextField")
+
             TextField(vm.emailPlaceholderText, text: $vm.emailText)
-                .font(Font.title3)
-                .padding()
-                .background(Color.init(red: 0.9, green: 0.9, blue: 0.9))
-                .cornerRadius(20)
-            
+                    .font(Font.title3)
+                    .padding()
+                    .background(Color.init(red: 0.9, green: 0.9, blue: 0.9))
+                    .cornerRadius(20)
+                    .accessibilityIdentifier("EmailTextField")
+
             TextField(vm.passPlaceholderText, text: $vm.passText)
-                .font(Font.title3)
-                .padding()
-                .background(Color.init(red: 0.9, green: 0.9, blue: 0.9))
-                .cornerRadius(20)
-            
+                    .font(Font.title3)
+                    .padding()
+                    .background(Color.init(red: 0.9, green: 0.9, blue: 0.9))
+                    .cornerRadius(20)
+                    .accessibilityIdentifier("PassTextField")
+
             Button(action: {
-                vm.signUpBottonPressed()
+                vm.signUpButtonPressed()
             }, label: {
                 Text("Sign Up")
-                    .font(Font.title)
-                    .bold()
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .foregroundColor(Color.white)
-                    .background(Color.gray)
-                    .cornerRadius(20)
+                        .font(Font.title)
+                        .bold()
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .foregroundColor(Color.white)
+                        .background(Color.gray)
+                        .cornerRadius(20)
+                        .accessibilityIdentifier("SignUpButton")
             })
-            .padding(.top)
+                    .padding(.top)
         }
-        .padding()
+                .padding()
     }
 }
 

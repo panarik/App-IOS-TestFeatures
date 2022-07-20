@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D07BE071D95CAB7ACA2B4CE9 /* UITestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BECB9502CBD4A1BFF302C /* UITestingView.swift */; };
+		D07BE0484843C2B9E5073322 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE0F5F1489325181966FB /* Controller.swift */; };
 		D07BE174A4CC74374B9DD31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */; };
+		D07BE3512EEE52A4751C1AFF /* AuthScreen_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */; };
 		D07BE46152BA334FAA07A7BB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BED5BA9EED3B6D68CDBCE /* ListView.swift */; };
 		D07BE4661C70580B8C814DD8 /* UnitTestingViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE1D38D3EED7AFABFB80B /* UnitTestingViewModel_Test.swift */; };
 		D07BE50CFD8DD41EE7EC7783 /* Swift_IOS_Features_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BECA42C69BC527375583A /* Swift_IOS_Features_Tests.swift */; };
-		D07BE52E1D5477A7783ED8A3 /* AuthScreen_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE8251C611D4B5D378D69 /* AuthScreen_UITests.swift */; };
+		D07BE5B063F486AAFDEFD2DD /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE22D5AF28EEEA2D1AB2D /* AuthPage.swift */; };
 		D07BE5EE6D5472562EF49830 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE69702571A7397F95E00 /* NewMockDataService_Test.swift */; };
 		D07BE60B2E885611B7004BCD /* App_IOS_TestFeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE862805CA79B4D2EB546 /* App_IOS_TestFeaturesApp.swift */; };
 		D07BE6B215388C056BF30E55 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE90D93E4DF438A7B3752 /* AuthView.swift */; };
 		D07BE722B81582264B626028 /* UnitTestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE7FC8B473AD8CF714437 /* UnitTestingViewModel.swift */; };
+		D07BEA1400C5674113059AB9 /* UITestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEDF48F643B2300CC1517 /* UITestingView.swift */; };
+		D07BEAED416F49021D8A849E /* BaseTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */; };
 		D07BEB8DA07340CE4815278C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE95957C2100F1014D729 /* ContentView.swift */; };
 		D07BEB981F89F92F662356E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE31C95ED5C6FD7D9F482 /* MainView.swift */; };
 		D07BED071A0F0717C2B8A39D /* DependencyInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */; };
@@ -43,23 +46,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D07BE0F5F1489325181966FB /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
 		D07BE13F25C8FC8AA7A78AA4 /* UnitTestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingView.swift; sourceTree = "<group>"; };
 		D07BE1D38D3EED7AFABFB80B /* UnitTestingViewModel_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel_Test.swift; sourceTree = "<group>"; };
+		D07BE22D5AF28EEEA2D1AB2D /* AuthPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthPage.swift; path = pages/AuthPage.swift; sourceTree = "<group>"; };
 		D07BE31C95ED5C6FD7D9F482 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTestClass.swift; sourceTree = "<group>"; };
+		D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreen_UITests.swift; sourceTree = "<group>"; };
 		D07BE659F95BF0C0959CC90C /* App-IOS-TestFeatures_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeatures_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07BE66B9DE98030AFF1E5B3 /* App-IOS-TestFeatures_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeatures_UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07BE69702571A7397F95E00 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
 		D07BE7FC8B473AD8CF714437 /* UnitTestingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel.swift; sourceTree = "<group>"; };
-		D07BE8251C611D4B5D378D69 /* AuthScreen_UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthScreen_UITests.swift; sourceTree = "<group>"; };
 		D07BE862805CA79B4D2EB546 /* App_IOS_TestFeaturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeaturesApp.swift; sourceTree = "<group>"; };
 		D07BE90D93E4DF438A7B3752 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		D07BE95957C2100F1014D729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D07BE984E7396490B02EBD2E /* NewMockDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swift; sourceTree = "<group>"; };
 		D07BECA42C69BC527375583A /* Swift_IOS_Features_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift_IOS_Features_Tests.swift; sourceTree = "<group>"; };
-		D07BECB9502CBD4A1BFF302C /* UITestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestingView.swift; sourceTree = "<group>"; };
 		D07BED5BA9EED3B6D68CDBCE /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D07BEDF48F643B2300CC1517 /* UITestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestingView.swift; sourceTree = "<group>"; };
 		D07BEF2B129DB56EF4474B78 /* App-IOS-TestFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-IOS-TestFeatures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07BEF96BD5F5EFC38B38E0B /* ProtocolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,6 +95,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D07BE0824CE66E8738DA27D2 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */,
+				D07BE168C86E8D0758844081 /* base */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		D07BE168C86E8D0758844081 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */,
+				D07BE0F5F1489325181966FB /* Controller.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		D07BE6AB7C2EC9DAF3819A4D /* App-IOS-TestFeatures */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +153,8 @@
 		D07BEBCE6B374EF5797AC7BC /* App-IOS-TestFeatures_UITests */ = {
 			isa = PBXGroup;
 			children = (
-				D07BE8251C611D4B5D378D69 /* AuthScreen_UITests.swift */,
+				D07BE0824CE66E8738DA27D2 /* tests */,
+				D07BE22D5AF28EEEA2D1AB2D /* AuthPage.swift */,
 			);
 			path = "App-IOS-TestFeatures_UITests";
 			sourceTree = "<group>";
@@ -165,7 +190,7 @@
 		D07BEE1CC0118D8366B06B04 /* UITesting */ = {
 			isa = PBXGroup;
 			children = (
-				D07BECB9502CBD4A1BFF302C /* UITestingView.swift */,
+				D07BEDF48F643B2300CC1517 /* UITestingView.swift */,
 			);
 			path = UITesting;
 			sourceTree = "<group>";
@@ -290,7 +315,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07BE52E1D5477A7783ED8A3 /* AuthScreen_UITests.swift in Sources */,
+				D07BE3512EEE52A4751C1AFF /* AuthScreen_UITests.swift in Sources */,
+				D07BEAED416F49021D8A849E /* BaseTestClass.swift in Sources */,
+				D07BE0484843C2B9E5073322 /* Controller.swift in Sources */,
+				D07BE5B063F486AAFDEFD2DD /* AuthPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,7 +336,7 @@
 				D07BEFBEC5193F99D1188670 /* NewMockDataService.swift in Sources */,
 				D07BEF37B450F920209263B3 /* UnitTestingView.swift in Sources */,
 				D07BE722B81582264B626028 /* UnitTestingViewModel.swift in Sources */,
-				D07BE071D95CAB7ACA2B4CE9 /* UITestingView.swift in Sources */,
+				D07BEA1400C5674113059AB9 /* UITestingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
