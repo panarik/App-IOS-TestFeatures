@@ -1,4 +1,3 @@
-import Foundation
 import XCTest
 
 class BaseTestClass: XCTestCase {
@@ -7,12 +6,13 @@ class BaseTestClass: XCTestCase {
 
     // Get pages.
     var authPage: AuthPage!
-
+    var alert: Alert!
 
     override func setUpWithError() throws {
         continueAfterFailure = false
-        app = Controller().getApp() // Get application.
-        authPage = AuthPage(app) // Create page.
+        let app = Controller().getApp()
+        authPage = AuthPage(app)
+        alert = Alert(app)
     }
 
     override func tearDownWithError() throws {

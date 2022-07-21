@@ -81,7 +81,9 @@ extension AuthView {
                         .accessibilityIdentifier("SignUpButton")
             })
                     .alert(isPresented: $vm.incorrectName, content: {
-                        Alert(title: Text("Wrong password length"), message: Text("Password must be at least 6 characters long."))
+                        Alert(
+                                title: Text("Wrong password length"),
+                                message: Text("Password must be at least 6 characters long."))
                     })
                     .padding(.top)
         }
