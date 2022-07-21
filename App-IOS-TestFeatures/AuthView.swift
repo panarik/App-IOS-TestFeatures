@@ -8,10 +8,17 @@ private class AuthViewModel: ObservableObject {
     @Published var passText: String = ""
     @Published var passPlaceholderText: String = "Your password"
     @Published var signedIn: Bool = false
+    @Published var incorrectName: Bool = false
 
     func signUpButtonPressed() {
-        if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
+        if passText.count < 6 {
+            incorrectName = true
+        }
+         else if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
             signedIn = true
+        }
+        else {
+
         }
     }
 }
@@ -73,6 +80,9 @@ extension AuthView {
                         .cornerRadius(20)
                         .accessibilityIdentifier("SignUpButton")
             })
+                    .alert(isPresented: $vm.incorrectName, content: {
+                        Alert(title: Text("Wrong password length"), message: Text("Password must be at least 6 characters long."))
+                    })
                     .padding(.top)
         }
                 .padding()

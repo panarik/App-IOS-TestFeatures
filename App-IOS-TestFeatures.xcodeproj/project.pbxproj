@@ -20,7 +20,6 @@
 		D07BE722B81582264B626028 /* UnitTestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE7FC8B473AD8CF714437 /* UnitTestingViewModel.swift */; };
 		D07BEA1400C5674113059AB9 /* UITestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEDF48F643B2300CC1517 /* UITestingView.swift */; };
 		D07BEAED416F49021D8A849E /* BaseTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */; };
-		D07BEB8DA07340CE4815278C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE95957C2100F1014D729 /* ContentView.swift */; };
 		D07BEB981F89F92F662356E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE31C95ED5C6FD7D9F482 /* MainView.swift */; };
 		D07BED071A0F0717C2B8A39D /* DependencyInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */; };
 		D07BEF37B450F920209263B3 /* UnitTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE13F25C8FC8AA7A78AA4 /* UnitTestingView.swift */; };
@@ -60,7 +59,6 @@
 		D07BE7FC8B473AD8CF714437 /* UnitTestingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel.swift; sourceTree = "<group>"; };
 		D07BE862805CA79B4D2EB546 /* App_IOS_TestFeaturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeaturesApp.swift; sourceTree = "<group>"; };
 		D07BE90D93E4DF438A7B3752 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
-		D07BE95957C2100F1014D729 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D07BE984E7396490B02EBD2E /* NewMockDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swift; sourceTree = "<group>"; };
 		D07BECA42C69BC527375583A /* Swift_IOS_Features_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift_IOS_Features_Tests.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			children = (
 				D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */,
 				D07BE862805CA79B4D2EB546 /* App_IOS_TestFeaturesApp.swift */,
-				D07BE95957C2100F1014D729 /* ContentView.swift */,
 				D07BE90D93E4DF438A7B3752 /* AuthView.swift */,
 				D07BE31C95ED5C6FD7D9F482 /* MainView.swift */,
 				D07BED5BA9EED3B6D68CDBCE /* ListView.swift */,
@@ -327,7 +324,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07BE60B2E885611B7004BCD /* App_IOS_TestFeaturesApp.swift in Sources */,
-				D07BEB8DA07340CE4815278C /* ContentView.swift in Sources */,
 				D07BE6B215388C056BF30E55 /* AuthView.swift in Sources */,
 				D07BEB981F89F92F662356E5 /* MainView.swift in Sources */,
 				D07BE46152BA334FAA07A7BB /* ListView.swift in Sources */,
