@@ -1,7 +1,5 @@
 import SwiftUI
 
-// Test comment
-
 class MainViewModel {
     
     var landmarks:[Landmark]
