@@ -3,34 +3,28 @@ import XCTest
 class AuthPage: BasePage {
 
     // Fields
-    private var logoImage: XCUIElement
-    private var nameField: XCUIElement
-    private var emailField: XCUIElement
-    private var passField: XCUIElement
-    private var continueButton: XCUIElement
+    let logoImage = Control.app.images["loginImage"]
+    let nameField = Control.app.textFields["NameTextField"]
+    let emailField = Control.app.textFields["EmailTextField"]
+    let passField = Control.app.textFields["PassTextField"]
+    let continueButton  = Control.app.buttons["SignUpButton"]
 
-    override init() {
-        logoImage = Control.app.images["login-secure"]
-        nameField = Control.app.textFields["NameTextField"]
-        emailField = Control.app.textFields["EmailTextField"]
-        passField = Control.app.textFields["PassTextField"]
-        continueButton = Control.app.buttons["SignUpButton"]
-        super.init()
-    }
-
-    func enterName(_ text: String) {
+    func enterName(_ text: String) -> AuthPage {
         nameField.tap()
         Control.app.typeText(text)
+        return self
     }
 
-    func enterEmail(_ text: String) {
+    func enterEmail(_ text: String) -> AuthPage {
         emailField.tap()
         Control.app.typeText(text)
+        return self
     }
 
-    func enterPass(_ text: String) {
+    func enterPass(_ text: String) -> AuthPage {
         passField.tap()
         Control.app.typeText(text)
+        return self
     }
 
     func tapSignUpButton() {

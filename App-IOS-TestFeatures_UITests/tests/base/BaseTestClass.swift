@@ -2,15 +2,13 @@ import XCTest
 
 class BaseTestClass: XCTestCase {
 
-    // Get pages.
-    var authPage: AuthPage!
-    var alert: Alert!
+    // Pages.
+    var authPage = AuthPage()
+    var alert = Alert()
 
     override func setUpWithError() throws {
         continueAfterFailure = false
-        Control.launch()
-        authPage = AuthPage()
-        alert = Alert()
+        Control.launch() // Launch app.
     }
 
     override func tearDownWithError() throws {

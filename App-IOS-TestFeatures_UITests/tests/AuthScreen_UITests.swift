@@ -3,7 +3,6 @@ import XCTest
 class Swift_IOS_FeaturesUITests: BaseTestClass {
 
     func test_loginSecure_exist() throws {
-
         // Then
         authPage.checkExistLogo()
     }
@@ -11,18 +10,18 @@ class Swift_IOS_FeaturesUITests: BaseTestClass {
     func test_SignUpButton_shouldSingUp() throws {
         // When
         authPage.enterName("name")
-        authPage.enterEmail("email")
-        authPage.enterPass("pass123")
-        authPage.tapSignUpButton()
+                .enterEmail("email")
+                .enterPass("pass123")
+                .tapSignUpButton()
 
         // Then
-
+        authPage.checkExistLogo()
     }
 
     func test_PassTextField_shouldBeMoreThanSixChars() throws {
         // When
         authPage.enterPass("12345")
-        authPage.tapSignUpButton()
+                .tapSignUpButton()
 
         // Then
         alert.checkExist()
@@ -31,7 +30,7 @@ class Swift_IOS_FeaturesUITests: BaseTestClass {
     func test_PassAlert_shouldBeDismissed() throws {
         // When
         authPage.enterPass("12345")
-        authPage.tapSignUpButton()
+                .tapSignUpButton()
         alert.handle()
 
         // Then

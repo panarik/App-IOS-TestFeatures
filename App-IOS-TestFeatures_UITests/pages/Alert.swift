@@ -2,12 +2,8 @@ import XCTest
 
 class Alert: BasePage {
 
-    private var alert: XCUIElement
-
-    override init() {
-        alert = Control.app.alerts.firstMatch
-        super.init()
-    }
+    // Fields
+    let alert = Control.app.alerts.firstMatch
 
     func checkExist() {
         XCTAssertTrue(alert.waitForExistence(timeout: 5))
