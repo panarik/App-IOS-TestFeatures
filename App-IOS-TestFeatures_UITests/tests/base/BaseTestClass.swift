@@ -2,8 +2,6 @@ import XCTest
 
 class BaseTestClass: XCTestCase {
 
-    var app: XCUIApplication! // Application.
-
     // Get pages.
     var authPage: AuthPage!
     var alert: Alert!

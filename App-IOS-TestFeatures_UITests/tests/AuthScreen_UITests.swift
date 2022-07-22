@@ -27,18 +27,17 @@ class Swift_IOS_FeaturesUITests: BaseTestClass {
         authPage.tapSignUpButton()
 
         // Then
-        alert.isExist()
+        alert.checkExist()
     }
 
     func test_PassAlert_shouldBeDismissed() throws {
         // When
         authPage.enterPass("12345")
         authPage.tapSignUpButton()
-        alert.isExist()
         alert.handle()
 
         // Then
-        alert.isNotExist()
+        alert.checkNotExist()
     }
 
 }

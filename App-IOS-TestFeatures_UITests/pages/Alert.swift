@@ -2,25 +2,27 @@ import XCTest
 
 class Alert: BasePage {
 
-    private var wrongPass: XCUIElement!
+    private var alert: XCUIElement!
 
     init(_ app: XCUIApplication) {
         super.init(app: app)
-        wrongPass = app.alerts["Wrong password length"]
+        alert = app.alerts.firstMatch
     }
 
-    func isExist() {
-        XCTAssertTrue(wrongPass.exists)
+    func checkExist() {
+        XCTAssertTrue(alert.waitForExistence(timeout: 5))
     }
 
-    func isNotExist() {
-        XCTAssertFalse(wrongPass.exists)
+    func checkNotExist() {
+        XCTAssertFalse(alert.exists)
     }
 
     func handle() {
-        let okButton = wrongPass.scrollViews.otherElements.buttons["OK"]
-        okButton.waitForExistence(timeout: 1)
-        okButton.tap()
+        if alert.exists {
+            let okButton = alert.scrollViews.otherElements.buttons["OK"]
+            okButton.waitForExistence(timeout: 1)
+            okButton.tap()
+        }
     }
 
 }
