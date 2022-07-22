@@ -45,6 +45,7 @@ extension AuthView {
         VStack {
             Image("login-secure")
                     .padding(.bottom)
+                    .accessibilityIdentifier("loginImage")
 
             TextField(vm.namePlaceHolderText, text: $vm.nameText)
                     .font(Font.title3)
