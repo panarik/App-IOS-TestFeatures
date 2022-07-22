@@ -3,11 +3,9 @@ import XCTest
 class Swift_IOS_FeaturesUITests: BaseTestClass {
 
     func test_loginSecure_exist() throws {
-        // Given
-        let logo = app.images["login-secure"]
 
         // Then
-        XCTAssertTrue(logo.exists)
+        authPage.checkExistLogo()
     }
 
     func test_SignUpButton_shouldSingUp() throws {
@@ -18,7 +16,7 @@ class Swift_IOS_FeaturesUITests: BaseTestClass {
         authPage.tapSignUpButton()
 
         // Then
-        XCTAssertTrue(app.navigationBars["Main menu"].exists)
+
     }
 
     func test_PassTextField_shouldBeMoreThanSixChars() throws {

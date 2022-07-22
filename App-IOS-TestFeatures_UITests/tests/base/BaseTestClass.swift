@@ -8,9 +8,9 @@ class BaseTestClass: XCTestCase {
 
     override func setUpWithError() throws {
         continueAfterFailure = false
-        let app = Controller().getApp()
-        authPage = AuthPage(app)
-        alert = Alert(app)
+        Control.launch()
+        authPage = AuthPage()
+        alert = Alert()
     }
 
     override func tearDownWithError() throws {

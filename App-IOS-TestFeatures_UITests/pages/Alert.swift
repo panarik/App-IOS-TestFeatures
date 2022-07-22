@@ -2,11 +2,11 @@ import XCTest
 
 class Alert: BasePage {
 
-    private var alert: XCUIElement!
+    private var alert: XCUIElement
 
-    init(_ app: XCUIApplication) {
-        super.init(app: app)
-        alert = app.alerts.firstMatch
+    override init() {
+        alert = Control.app.alerts.firstMatch
+        super.init()
     }
 
     func checkExist() {
