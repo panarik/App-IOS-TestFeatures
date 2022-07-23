@@ -7,8 +7,12 @@ private class AuthViewModel: ObservableObject {
     @Published var emailPlaceholderText: String = "Your email"
     @Published var passText: String = ""
     @Published var passPlaceholderText: String = "Your password"
-    @Published var signedIn: Bool = false
+    @Published var signedIn: Bool
     @Published var incorrectName: Bool = false
+
+    init(signedIn: Bool) {
+        self.signedIn = signedIn
+    }
 
     func signUpButtonPressed() {
         if passText.count < 6 {
@@ -25,7 +29,11 @@ private class AuthViewModel: ObservableObject {
 
 struct AuthView: View {
 
-    @StateObject private var vm: AuthViewModel = AuthViewModel()
+    @StateObject private var vm: AuthViewModel
+
+    init(signedIn: Bool) {
+        _vm = StateObject(wrappedValue: AuthViewModel(signedIn: signedIn))
+    }
 
     var body: some View {
         VStack {
@@ -94,6 +102,6 @@ extension AuthView {
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        AuthView()
+        AuthView(signedIn: false)
     }
 }

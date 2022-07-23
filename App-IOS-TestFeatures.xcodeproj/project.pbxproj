@@ -14,7 +14,6 @@
 		D07BE3512EEE52A4751C1AFF /* AuthScreen_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */; };
 		D07BE46152BA334FAA07A7BB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BED5BA9EED3B6D68CDBCE /* ListView.swift */; };
 		D07BE4661C70580B8C814DD8 /* UnitTestingViewModel_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE1D38D3EED7AFABFB80B /* UnitTestingViewModel_Test.swift */; };
-		D07BE50CFD8DD41EE7EC7783 /* Swift_IOS_Features_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BECA42C69BC527375583A /* Swift_IOS_Features_Tests.swift */; };
 		D07BE5EE6D5472562EF49830 /* NewMockDataService_Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE69702571A7397F95E00 /* NewMockDataService_Test.swift */; };
 		D07BE60B2E885611B7004BCD /* App_IOS_TestFeaturesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE862805CA79B4D2EB546 /* App_IOS_TestFeaturesApp.swift */; };
 		D07BE6B215388C056BF30E55 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE90D93E4DF438A7B3752 /* AuthView.swift */; };
@@ -24,6 +23,7 @@
 		D07BEA1400C5674113059AB9 /* UITestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEDF48F643B2300CC1517 /* UITestingView.swift */; };
 		D07BEAED416F49021D8A849E /* BaseTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */; };
 		D07BEB981F89F92F662356E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE31C95ED5C6FD7D9F482 /* MainView.swift */; };
+		D07BEC69B282AF65B1CC84FB /* MainScreen_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE71A459380A46CAD9B5B /* MainScreen_UITests.swift */; };
 		D07BED071A0F0717C2B8A39D /* DependencyInjectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */; };
 		D07BEF37B450F920209263B3 /* UnitTestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE13F25C8FC8AA7A78AA4 /* UnitTestingView.swift */; };
 		D07BEF82D3CE0411F8D653A8 /* ProtocolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEF96BD5F5EFC38B38E0B /* ProtocolView.swift */; };
@@ -59,13 +59,13 @@
 		D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D07BE66B9DE98030AFF1E5B3 /* App-IOS-TestFeatures_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "App-IOS-TestFeatures_UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07BE69702571A7397F95E00 /* NewMockDataService_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMockDataService_Test.swift; sourceTree = "<group>"; };
+		D07BE71A459380A46CAD9B5B /* MainScreen_UITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen_UITests.swift; sourceTree = "<group>"; };
 		D07BE7FC8B473AD8CF714437 /* UnitTestingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel.swift; sourceTree = "<group>"; };
 		D07BE8006A7701647666FB42 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		D07BE862805CA79B4D2EB546 /* App_IOS_TestFeaturesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App_IOS_TestFeaturesApp.swift; sourceTree = "<group>"; };
 		D07BE90D93E4DF438A7B3752 /* AuthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		D07BE984E7396490B02EBD2E /* NewMockDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewMockDataService.swift; sourceTree = "<group>"; };
 		D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyInjectionView.swift; sourceTree = "<group>"; };
-		D07BECA42C69BC527375583A /* Swift_IOS_Features_Tests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swift_IOS_Features_Tests.swift; sourceTree = "<group>"; };
 		D07BED5BA9EED3B6D68CDBCE /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		D07BEDF48F643B2300CC1517 /* UITestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestingView.swift; sourceTree = "<group>"; };
 		D07BEE05B76BD61ACB2C36EE /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
@@ -104,6 +104,7 @@
 			children = (
 				D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */,
 				D07BE168C86E8D0758844081 /* base */,
+				D07BE71A459380A46CAD9B5B /* MainScreen_UITests.swift */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -158,7 +159,6 @@
 			children = (
 				D07BE69702571A7397F95E00 /* NewMockDataService_Test.swift */,
 				D07BE1D38D3EED7AFABFB80B /* UnitTestingViewModel_Test.swift */,
-				D07BECA42C69BC527375583A /* Swift_IOS_Features_Tests.swift */,
 			);
 			path = "App-IOS-TestFeatures_Tests";
 			sourceTree = "<group>";
@@ -337,7 +337,6 @@
 			files = (
 				D07BE5EE6D5472562EF49830 /* NewMockDataService_Test.swift in Sources */,
 				D07BE4661C70580B8C814DD8 /* UnitTestingViewModel_Test.swift in Sources */,
-				D07BE50CFD8DD41EE7EC7783 /* Swift_IOS_Features_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +351,7 @@
 				D07BE10088C008F91B696FF5 /* BasePage.swift in Sources */,
 				D07BE8476FEA147B543EF367 /* Control.swift in Sources */,
 				D07BE076143BAA79FF7EC3DC /* MainPage.swift in Sources */,
+				D07BEC69B282AF65B1CC84FB /* MainScreen_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

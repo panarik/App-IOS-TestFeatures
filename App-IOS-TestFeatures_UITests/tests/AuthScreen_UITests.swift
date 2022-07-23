@@ -1,6 +1,6 @@
 import XCTest
 
-class Swift_IOS_FeaturesUITests: BaseTestClass {
+class AuthScreen_UITests: BaseTestClass {
 
     func test_loginSecure_exist() throws {
         // Then
@@ -15,7 +15,7 @@ class Swift_IOS_FeaturesUITests: BaseTestClass {
                 .tapSignUpButton()
 
         // Then
-        authPage.checkExistLogo()
+        main.onPage()
     }
 
     func test_PassTextField_shouldBeMoreThanSixChars() throws {

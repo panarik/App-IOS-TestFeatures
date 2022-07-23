@@ -10,7 +10,8 @@ class Alert: BasePage {
     }
 
     func checkNotExist() {
-        XCTAssertFalse(alert.exists)
+        let alertVisible = alert.waitForExistence(timeout: 1)
+        XCTAssertFalse(alertVisible)
     }
 
     func handle() {

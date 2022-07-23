@@ -8,7 +8,10 @@ class Control {
     private init() {
     }
 
-    static func launch() {
+    static func launch(signedIn: Bool) {
+        if signedIn {
+            app.launchArguments = ["-UITest_StartSignedIn"]
+        }
         app.launch()
     }
 

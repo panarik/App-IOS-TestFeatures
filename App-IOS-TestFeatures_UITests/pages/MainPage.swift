@@ -5,7 +5,7 @@ class MainPage: BasePage {
     // Fields
     let title = Control.app.navigationBars["Main menu"]
 
-    func checkExist() {
+    func onPage() {
         XCTAssertTrue(title.exists)
     }
 
