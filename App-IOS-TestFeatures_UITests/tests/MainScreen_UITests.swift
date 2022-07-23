@@ -6,6 +6,4 @@ class MainScreen_UITests: BaseTestClass {
         XCTAssertTrue(true)
     }
 
-
-
 }

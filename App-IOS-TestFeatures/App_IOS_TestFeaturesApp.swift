@@ -13,6 +13,17 @@ struct App_IOS_TestFeaturesApp: App {
         }
         print("User is signed in: \(userIsSignedIn)")
 
+        // inject screen
+        #if DEBUG
+        var injectionBundlePath = "/Applications/InjectionIII.app/Contents/Resources"
+        #if targetEnvironment(macCatalyst)
+        injectionBundlePath = "\(injectionBundlePath)/macOSInjection.bundle"
+        #elseif os(iOS)
+        injectionBundlePath = "\(injectionBundlePath)/iOSInjection.bundle"
+        #endif
+        Bundle(path: injectionBundlePath)?.load()
+        #endif
+
     }
 
     var body: some Scene {
