@@ -17,11 +17,9 @@ private class AuthViewModel: ObservableObject {
     func signUpButtonPressed() {
         if passText.count < 6 {
             incorrectName = true
-        }
-         else if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
+        } else if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
             signedIn = true
-        }
-        else {
+        } else {
 
         }
     }

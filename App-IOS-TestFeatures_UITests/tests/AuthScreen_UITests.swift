@@ -2,9 +2,9 @@ import XCTest
 
 class AuthScreen_UITests: BaseTestClass {
 
-    func test_loginSecure_exist() throws {
+    func test_checkAllElements() throws {
         // Then
-        authPage.checkExistLogo()
+        authPage.checkAllElements()
     }
 
     func test_SignUpButton_shouldSingUp() throws {

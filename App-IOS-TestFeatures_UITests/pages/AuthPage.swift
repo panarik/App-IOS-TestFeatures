@@ -28,8 +28,18 @@ class AuthPage: BasePage {
         continueButton.tap()
     }
 
-    func checkExistLogo() {
-        XCTAssertTrue(logoImage.exists)
+    func checkAllElements() {
+
+        // Logo
+        XCTAssertTrue(logoImage.waitForExistence(timeout: 1))
+
+        // Fields placeholder
+        XCTAssertEqual(nameField.placeholderValue, "Your name")
+        XCTAssertEqual(emailField.placeholderValue, "Your email")
+        XCTAssertEqual(passField.placeholderValue, "Your password")
+
+        // Fields value
+        XCTAssertEqual(nameField.value as! String, "Your name")
     }
 
 }

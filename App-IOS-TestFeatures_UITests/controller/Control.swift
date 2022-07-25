@@ -3,7 +3,7 @@ import XCTest
 
 class Control {
 
-    static let app = XCUIApplication()
+    static let app = XCUIApplication(bundleIdentifier: "com.github.panarik.App_IOS_TestFeatures")
 
     private init() {
     }
@@ -76,7 +76,7 @@ class Control {
 
      ___________________________________________
 
-     Interaction.
+     Interaction:
 
         1. For one element:
         doubleTap() taps twice in quick succession.
@@ -93,6 +93,21 @@ class Control {
         3. For sliders:
         adjust(toNormalizedSliderPosition: 0.5) to move it to a specific position.
 
+     _______________________________________________________________________________
+
+     Assertions:
+
+        1. Attributes
+        - app.buttons.element.title
+        - app.staticTexts.element.label
+        - app.textField.element.placeholderValue
+        - app.textField.element.value
+
+        2. Coordinates
+        - app.buttons.element.frame
+
+        3. Progress indicators (returns String with %)
+        - app.progressIndicators.element.value
      */
 
 
