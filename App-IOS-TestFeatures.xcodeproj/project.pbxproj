@@ -20,6 +20,7 @@
 		D07BE722B81582264B626028 /* UnitTestingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE7FC8B473AD8CF714437 /* UnitTestingViewModel.swift */; };
 		D07BE76AC51637B0D500EE54 /* AuthPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE50D15126488CBF2F3CF /* AuthPage.swift */; };
 		D07BE8476FEA147B543EF367 /* Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEE05B76BD61ACB2C36EE /* Control.swift */; };
+		D07BE9790CB30D514EF41923 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEF38747D43EBF110F18B /* PlayerView.swift */; };
 		D07BEA1400C5674113059AB9 /* UITestingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEDF48F643B2300CC1517 /* UITestingView.swift */; };
 		D07BEAED416F49021D8A849E /* BaseTestClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */; };
 		D07BEB981F89F92F662356E5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE31C95ED5C6FD7D9F482 /* MainView.swift */; };
@@ -71,6 +72,7 @@
 		D07BEE05B76BD61ACB2C36EE /* Control.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Control.swift; sourceTree = "<group>"; };
 		D07BEEC95829FCC10C8D14D2 /* MainPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		D07BEF2B129DB56EF4474B78 /* App-IOS-TestFeatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App-IOS-TestFeatures.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D07BEF38747D43EBF110F18B /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		D07BEF96BD5F5EFC38B38E0B /* ProtocolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +131,7 @@
 				D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */,
 				D07BEDFAB95D437524A81BB8 /* UnitTesting */,
 				D07BEE1CC0118D8366B06B04 /* UITesting */,
+				D07BEF38747D43EBF110F18B /* PlayerView.swift */,
 			);
 			path = "App-IOS-TestFeatures";
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				D07BEF37B450F920209263B3 /* UnitTestingView.swift in Sources */,
 				D07BE722B81582264B626028 /* UnitTestingViewModel.swift in Sources */,
 				D07BEA1400C5674113059AB9 /* UITestingView.swift in Sources */,
+				D07BE9790CB30D514EF41923 /* PlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

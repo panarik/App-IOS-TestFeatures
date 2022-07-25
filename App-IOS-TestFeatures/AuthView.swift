@@ -17,11 +17,9 @@ private class AuthViewModel: ObservableObject {
     func signUpButtonPressed() {
         if passText.count < 6 {
             incorrectName = true
-        }
-         else if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
+        } else if !nameText.isEmpty && !emailText.isEmpty && !passText.isEmpty {
             signedIn = true
-        }
-        else {
+        } else {
 
         }
     }
@@ -100,8 +98,17 @@ extension AuthView {
     }
 }
 
-struct AuthView_Previews: PreviewProvider {
+class AuthView_Previews: PreviewProvider {
     static var previews: some View {
         AuthView(signedIn: false)
     }
+
+    #if DEBUG
+    @objc class func injected() {
+        let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        windowScene?.windows.first?.rootViewController =
+                UIHostingController(rootView: AuthView(signedIn: false))
+    }
+    #endif
+
 }
