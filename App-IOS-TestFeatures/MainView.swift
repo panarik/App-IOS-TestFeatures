@@ -37,6 +37,8 @@ struct MainView: View {
                     LandmarkRow(landmark: landmark)
                 }
             }
+            .accessibilityIdentifier("mainMenuList")
+            .accessibilityLabel("Main menu")
                     .navigationTitle("Main menu")
         }
     }

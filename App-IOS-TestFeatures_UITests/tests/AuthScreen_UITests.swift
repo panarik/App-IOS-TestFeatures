@@ -1,6 +1,6 @@
 import XCTest
 
-class AuthScreen_UITests: BaseTestClass {
+class AuthScreen_UITests: BaseScenarios {
 
     func test_checkAllElements() throws {
         // Then

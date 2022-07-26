@@ -54,6 +54,8 @@ extension PlayerView {
             Text("Volume: "+String(format: "%.0f", vm.sliderValue))
                 .font(Font.title2)
                 .foregroundColor(vm.cliderColor)
+                .accessibilityIdentifier("VolumeStatusText")
+                .accessibilityLabel("Current sound volume is \(vm.sliderValue)")
             Slider(
                 value: $vm.sliderValue,
                 in: 0...100,
@@ -64,12 +66,13 @@ extension PlayerView {
                 minimumValueLabel: Text("min"),
                 maximumValueLabel: Text("max"),
                 label: {
-                    Text("Volume slider")
+                    Text("Slider shows \(vm.sliderValue) sound volume")
                 })
             .padding(.horizontal, 30.0)
             .background(Color.white)
             .foregroundColor(Color.red)
             .accentColor(Color.red)
+            .accessibilityIdentifier("VolumeSlider")
         }
     }
 }

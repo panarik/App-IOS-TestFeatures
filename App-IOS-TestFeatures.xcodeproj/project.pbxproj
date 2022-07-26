@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B8A40BAC288F4E18005B7FE8 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A40BAB288F4E18005B7FE8 /* PlayerView.swift */; };
+		B8A40BAE28906C81005B7FE8 /* PlayerView_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A40BAD28906C81005B7FE8 /* PlayerView_UITests.swift */; };
+		B8A40BB028906D15005B7FE8 /* PlayerPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A40BAF28906D15005B7FE8 /* PlayerPage.swift */; };
+		B8A40BB2289070EE005B7FE8 /* BaseScenarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A40BB1289070EE005B7FE8 /* BaseScenarios.swift */; };
 		D07BE076143BAA79FF7EC3DC /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BEEC95829FCC10C8D14D2 /* MainPage.swift */; };
 		D07BE10088C008F91B696FF5 /* BasePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07BE59D5EF80B0A4648EB1C /* BasePage.swift */; };
 		D07BE174A4CC74374B9DD31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D07BE665FEA6B9B2DAAB3E12 /* Assets.xcassets */; };
@@ -50,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		B8A40BAB288F4E18005B7FE8 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		B8A40BAD28906C81005B7FE8 /* PlayerView_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView_UITests.swift; sourceTree = "<group>"; };
+		B8A40BAF28906D15005B7FE8 /* PlayerPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPage.swift; sourceTree = "<group>"; };
+		B8A40BB1289070EE005B7FE8 /* BaseScenarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseScenarios.swift; sourceTree = "<group>"; };
 		D07BE13F25C8FC8AA7A78AA4 /* UnitTestingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingView.swift; sourceTree = "<group>"; };
 		D07BE1D38D3EED7AFABFB80B /* UnitTestingViewModel_Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitTestingViewModel_Test.swift; sourceTree = "<group>"; };
 		D07BE31C95ED5C6FD7D9F482 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -104,9 +110,10 @@
 		D07BE0824CE66E8738DA27D2 /* tests */ = {
 			isa = PBXGroup;
 			children = (
-				D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */,
 				D07BE168C86E8D0758844081 /* base */,
+				D07BE5DF0CBFB1A27A1C881B /* AuthScreen_UITests.swift */,
 				D07BE71A459380A46CAD9B5B /* MainScreen_UITests.swift */,
+				B8A40BAD28906C81005B7FE8 /* PlayerView_UITests.swift */,
 			);
 			path = tests;
 			sourceTree = "<group>";
@@ -115,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				D07BE34513BCBE3A781EF11D /* BaseTestClass.swift */,
+				B8A40BB1289070EE005B7FE8 /* BaseScenarios.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -129,9 +137,9 @@
 				D07BED5BA9EED3B6D68CDBCE /* ListView.swift */,
 				D07BEF96BD5F5EFC38B38E0B /* ProtocolView.swift */,
 				D07BEBE41710840DEB509BDA /* DependencyInjectionView.swift */,
+				B8A40BAB288F4E18005B7FE8 /* PlayerView.swift */,
 				D07BEDFAB95D437524A81BB8 /* UnitTesting */,
 				D07BEE1CC0118D8366B06B04 /* UITesting */,
-				B8A40BAB288F4E18005B7FE8 /* PlayerView.swift */,
 			);
 			path = "App-IOS-TestFeatures";
 			sourceTree = "<group>";
@@ -139,10 +147,11 @@
 		D07BE7D8DE022128B38665AA /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				D07BEC84E45FAD968406A269 /* base */,
 				D07BE50D15126488CBF2F3CF /* AuthPage.swift */,
 				D07BE8006A7701647666FB42 /* Alert.swift */,
-				D07BEC84E45FAD968406A269 /* base */,
 				D07BEEC95829FCC10C8D14D2 /* MainPage.swift */,
+				B8A40BAF28906D15005B7FE8 /* PlayerPage.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -177,9 +186,9 @@
 		D07BEBCE6B374EF5797AC7BC /* App-IOS-TestFeatures_UITests */ = {
 			isa = PBXGroup;
 			children = (
-				D07BE0824CE66E8738DA27D2 /* tests */,
-				D07BE7D8DE022128B38665AA /* pages */,
 				D07BE9D9D35A3EAA5A5E1893 /* controller */,
+				D07BE7D8DE022128B38665AA /* pages */,
+				D07BE0824CE66E8738DA27D2 /* tests */,
 			);
 			path = "App-IOS-TestFeatures_UITests";
 			sourceTree = "<group>";
@@ -353,11 +362,14 @@
 				D07BE3512EEE52A4751C1AFF /* AuthScreen_UITests.swift in Sources */,
 				D07BEAED416F49021D8A849E /* BaseTestClass.swift in Sources */,
 				D07BE76AC51637B0D500EE54 /* AuthPage.swift in Sources */,
+				B8A40BB028906D15005B7FE8 /* PlayerPage.swift in Sources */,
 				D07BE2BB5538BF6FAE06840B /* Alert.swift in Sources */,
 				D07BE10088C008F91B696FF5 /* BasePage.swift in Sources */,
 				D07BE8476FEA147B543EF367 /* Control.swift in Sources */,
+				B8A40BAE28906C81005B7FE8 /* PlayerView_UITests.swift in Sources */,
 				D07BE076143BAA79FF7EC3DC /* MainPage.swift in Sources */,
 				D07BEC69B282AF65B1CC84FB /* MainScreen_UITests.swift in Sources */,
+				B8A40BB2289070EE005B7FE8 /* BaseScenarios.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

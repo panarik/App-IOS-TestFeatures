@@ -3,7 +3,7 @@ import XCTest
 
 class Control {
 
-    static let app = XCUIApplication(bundleIdentifier: "com.github.panarik.App_IOS_TestFeatures")
+    static let app = XCUIApplication()
 
     private init() {
     }
