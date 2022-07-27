@@ -7,10 +7,13 @@ struct App_IOS_TestFeaturesApp: App {
     var userIsSignedIn = false
 
     init() {
+        
         // Run without authorization.
         if CommandLine.arguments.contains("-UITest_StartSignedIn") {
             userIsSignedIn = true
+            
         }
+        
         print("User is signed in: \(userIsSignedIn)")
 
         // inject screen

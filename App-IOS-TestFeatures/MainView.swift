@@ -11,6 +11,7 @@ class MainViewModel {
         landmarks.append(Landmark(id: 3, name: "Music player", imageName: "playing_audio_band"))
         landmarks.append(Landmark(id: 4, name: "UI bugs", imageName: "bug_ui_example_logo"))
         landmarks.append(Landmark(id: 5, name: "Themes", imageName: "picture_effects_plash_smoke"))
+        landmarks.append(Landmark(id: 6, name: "Map", imageName: "map_logo"))
     }
 }
 
@@ -29,6 +30,7 @@ struct MainView: View {
                     case "List Example": ListView()
                     case "Themes": ProtocolView()
                     case  "Music player": PlayerView()
+                    case "Map": MapView()
                     default: Text(landmark.name + " screen does not exist")
                             .font(.title)
                     }
