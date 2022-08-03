@@ -9,18 +9,19 @@ class MapViewModel: ObservableObject {
     
     // Current location.
     @Published var mapLocation: Location {
-        
-        // do this after updating var 'mapLocation'.
         didSet {
-            updateRegion(location: mapLocation)
+            updateRegion(location: mapLocation) // do this after updating var 'mapLocation'.
         }
     }
     
     // Current region map on the screen.
     @Published var mapRegion: MKCoordinateRegion
     
+    // Show locations list on map.
+    @Published var locationsListOnScreen: Bool = false
+    
     // Map scale.
-    let mapScale = MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
+    let mapScale = MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05)
     
     init() {
         let locations = LocationsDataService.locations
@@ -32,12 +33,30 @@ class MapViewModel: ObservableObject {
     }
     
     /**
+     Updating current map location.
+     */
+    func updateLocation(location: Location) {
+        withAnimation(.easeOut) {
+            self.mapLocation = location
+            self.locationsListOnScreen = false // close location list
+        }
+        
+    }
+    
+    /**
      Updating map region to current location.
      `location` - current location
      */
-    func updateRegion(location: Location) {
-        withAnimation {
-            mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapScale)
+    private func updateRegion(location: Location) {
+        self.mapRegion = MKCoordinateRegion(center: location.coordinates, span: mapScale)
+    }
+    
+    /**
+     Toggle map showing.
+     */
+    func toggleLocationsList() {
+        withAnimation(.easeOut) {
+            locationsListOnScreen.toggle()
         }
     }
     

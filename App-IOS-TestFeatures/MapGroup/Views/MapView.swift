@@ -34,12 +34,28 @@ extension MapView {
     
     private var headers: some View {
         VStack {
-            Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
-                .font(.title)
-                .fontWeight(.black)
-                .frame(maxWidth: .infinity)
-                .frame(height: 50)
+            Button {
+                vm.toggleLocationsList()
+            } label: {
+                Text(vm.mapLocation.name + ", " + vm.mapLocation.cityName)
+                    .font(.title)
+                    .fontWeight(.black)
+                    .foregroundColor(.primary)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 50)
+                    .background(Color.gray)
+                    .overlay(alignment: .leading) {
+                        Image(systemName: "arrow.down")
+                            .font(.title3)
+                            .foregroundColor(.primary)
+                            .padding()
+                            .rotationEffect(Angle(degrees: vm.locationsListOnScreen ? 180 : 0))
+                    }
+            }
 
+            if vm.locationsListOnScreen {
+                LocationsListView()
+            }
         }
         .background(.thickMaterial)
         .cornerRadius(10)
