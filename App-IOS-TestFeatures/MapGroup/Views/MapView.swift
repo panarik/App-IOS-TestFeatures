@@ -7,19 +7,35 @@ struct MapView: View {
 
     var body: some View {
         ZStack {
-            Map(coordinateRegion: $vm.mapRegion)
+            Map(coordinateRegion: $vm.mapRegion,
+                annotationItems: vm.locations,
+                annotationContent: { location in
+                MapAnnotation(coordinate: location.coordinates) {
+                    Button {
+                        vm.updateLocation(location: location)
+                    } label: {
+                        Image(systemName: "info.circle.fill")
+                            .resizable()
+                            .frame(width: 40, height: 40)
+                            .background(Color.white)
+                            .cornerRadius(20)
+                    }
+
+                }
+            })
                 .ignoresSafeArea()
             
             VStack {
                 headers
-                    .padding()
-                
+                    .padding(/*@START_MENU_TOKEN@*/.horizontal/*@END_MENU_TOKEN@*/)
+                    
                 Spacer()
+                description
+                    .padding()
             }
         }
         // Creates the environment object.
         .environmentObject(vm)
-        
     }
         
 }
@@ -43,7 +59,6 @@ extension MapView {
                     .foregroundColor(.primary)
                     .frame(maxWidth: .infinity)
                     .frame(height: 50)
-                    .background(Color.gray)
                     .overlay(alignment: .leading) {
                         Image(systemName: "arrow.down")
                             .font(.title3)
@@ -59,7 +74,23 @@ extension MapView {
         }
         .background(.thickMaterial)
         .cornerRadius(10)
-        .shadow(color: .black, radius: 20, x: 0, y: 15)
+        .shadow(color: .black.opacity(0.5), radius: 20, x: 0, y: 15)
+    }
+    
+    private var description: some View {
+        ZStack {
+            ForEach(vm.locations) { location in
+                if vm.mapLocation.id == location.id {
+                    LocationsPreviewView(location: location)
+                        .shadow(color: Color.black.opacity(0.5), radius: 20, x: 0, y: 20)
+                        .transition(.asymmetric(
+                            insertion: .move(edge: .trailing),
+                            removal: .move(edge: .leading)))
+                        
+                }
+                
+            }
+        }
     }
     
 }

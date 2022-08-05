@@ -60,4 +60,26 @@ class MapViewModel: ObservableObject {
         }
     }
     
+    func setNextLocation() {
+        var nextIndex: Int
+        
+        // Find current index.
+        guard let currentIndex = locations.firstIndex(where: { location in
+            location.id == mapLocation.id
+        }) else {
+            print("Can't find current location index")
+            return
+        }
+        
+        // Find to next index in locations cycle.
+        if currentIndex < (locations.count - 1) {
+            nextIndex = currentIndex + 1
+        } else {
+            nextIndex = 0
+        }
+        
+        //Go to next location.
+        updateLocation(location: locations[nextIndex])
+        
+    }
 }

@@ -12,7 +12,7 @@ struct LocationsListView: View {
                 } label: {
                     locationItem(location: location)
                 }
-                .padding()
+                
                 .listRowBackground(Color.clear)
             }
         }
@@ -36,7 +36,7 @@ extension LocationsListView {
             Image(location.imageNames.first ?? "loading")
                 .resizable()
                 .scaledToFill()
-                .frame(width: 80, height: 80)
+                .frame(width: 50, height: 50)
                 .cornerRadius(10)
             VStack(alignment: .leading) {
                 Text(location.name)
