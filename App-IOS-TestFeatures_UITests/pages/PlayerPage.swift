@@ -7,7 +7,7 @@ class PlayerPage: BasePage {
     var volumeSlider = Control.app.sliders["VolumeSlider"]
     
     func onPage() {
-        XCTAssertTrue(volumeSlider.waitForExistence(timeout: 1))
+        XCTAssertTrue(volumeSlider.waitForExistence(timeout: waitingSec))
     }
     
     func setVolume(_ volume: Int) {

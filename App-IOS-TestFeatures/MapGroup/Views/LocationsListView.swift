@@ -17,6 +17,7 @@ struct LocationsListView: View {
             }
         }
         .listStyle(.plain)
+        .accessibilityIdentifier("locations list")
     }
     
 }

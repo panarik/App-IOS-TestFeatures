@@ -8,7 +8,7 @@ class MainPage: BasePage {
     let menuListFirstItem = Control.app.tables["mainMenuList"].descendants(matching: .staticText).element(boundBy: 0)
 
     func onPage() {
-        XCTAssertTrue(title.exists)
+        XCTAssertTrue(title.waitForExistence(timeout: waitingSec))
     }
     
     func checkMenuCount(with expected:Int) {

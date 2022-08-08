@@ -19,11 +19,14 @@ struct MapView: View {
                             .frame(width: 40, height: 40)
                             .background(Color.white)
                             .cornerRadius(20)
+                            .accessibilityIdentifier("MapPin image info.circle.fill")
                     }
-
+                    .accessibilityIdentifier("MapPin " + location.name)
+                    
                 }
             })
                 .ignoresSafeArea()
+                .accessibilityIdentifier("Map background")
             
             VStack {
                 headers
@@ -67,6 +70,7 @@ extension MapView {
                             .rotationEffect(Angle(degrees: vm.locationsListOnScreen ? 180 : 0))
                     }
             }
+            .accessibilityIdentifier("Title")
 
             if vm.locationsListOnScreen {
                 LocationsListView()

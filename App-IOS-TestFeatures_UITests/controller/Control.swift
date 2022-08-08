@@ -10,7 +10,7 @@ class Control {
 
     static func launch(signedIn: Bool) {
         if signedIn {
-            app.launchArguments = ["-UITest_StartSignedIn"]
+            app.launchArguments = ["-UITest_StartSignedIn"] // Start app with singedIn property.
         }
         app.launch()
     }
@@ -35,7 +35,6 @@ class Control {
             }
         }
         app.buttons["Return"].tap()
-//        app.keys["Return"].tap()
     }
 
     static func enterText(_ element: XCUIElement, _ text: String) {
@@ -45,34 +44,21 @@ class Control {
 
     /*
      _____________________________________________________
-    Locators:
+    More locators:
 
         1. Simple:
         app.collectionViews.element
-        app.maps.element
         app.navigationBars.element
         app.pickers.element
         app.progressIndicators.element
-        app.scrollViews.element
         app.segmentedControls.element
-        app.staticTexts.element
         app.switches.element
         app.tabBars.element
-        app.tables.element
-        app.textViews.element
         app.webViews.element
 
         2. Advanced queries:
         all buttons inside a specific scroll view (direct subviews only)
         - app.scrollViews["Main"].children(matching: .button)
-
-        all buttons anywhere inside a specific scroll view (subviews, sub-subviews, sub-sub-subviews, etc)
-        - app.scrollViews["Main"].descendants(matching: .button)
-
-        find the first and fourth buttons
-        - app.buttons.element(boundBy: 0)
-        - app.buttons.element(boundBy: 3)
-
 
      ___________________________________________
 
